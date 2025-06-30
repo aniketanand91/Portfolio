@@ -51,7 +51,6 @@ const CardCarousel = () => {
     speed: 500, // Animation speed
     slidesToShow: 4, // Number of cards to show
     arrows: false,
-    dots: true,
     autoplay: true,
     autoplaySpeed: 2000,
     slidesToScroll: 1, // Number of cards to scroll per action
