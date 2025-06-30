@@ -1,0 +1,167 @@
+.contact-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: url('../images/hands.png'); /* Replace with your GIF file */
+    background-size: cover; /* Ensure the GIF covers the entire container */
+    background-position: center; /* Center the GIF */
+    overflow: hidden; /* Prevent content overflow */
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-heading {
+    flex: 1;
+    width: 50%;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 320px;
+}
+
+.contact-me {
+    flex: 1;
+    width: 50%;
+}
+
+.buttons-to {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align buttons */
+    margin-top: 350px;
+}
+
+.button {
+    margin: 10px; /* Space between buttons */
+}
+
+.contact-button {
+    height: 50px;
+    width: 200px; /* Set the width for all buttons */
+    padding: 10px; /* Add padding for better height */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 1.2rem; /* Font size */
+    font-weight: bold; /* Font weight */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button specific styles */
+.email-button {
+    background-color: #e7e7e7; /* Light grey for email */
+    color: #333; /* Dark text color */
+}
+
+.instagram-button {
+    background-color: #e1306c; /* Instagram pink */
+}
+
+.linkedin-button {
+    background-color: #0077b5; /* LinkedIn blue */
+}
+
+.contact-button:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.email-icon, .instagram-icon, .linkedin-icon {
+    margin-right: 13px; /* Add space between the icon and text */
+}
+
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+
+    .contact-container {
+        flex-direction: column; /* Change to column layout */
+        justify-content: center; /* Center the content vertically */
+        align-items: center; /* Center the content horizontally */
+    }
+
+    .contact-heading {
+        font-size: 2.5rem; /* Slightly smaller font size */
+        padding-top: 200px; /* Adjust padding */
+    }
+
+    .buttons-to {
+        margin-top: 50px; /* Reduce margin for smaller screens */
+        margin-bottom: 40px;
+    }
+
+    .contact-button {
+        width: 180px; /* Smaller button width */
+        font-size: 1.1rem; /* Smaller font size */
+    }
+}
+
+@media (max-width: 992px) {
+
+    .contact-container {
+        flex-direction: column; /* Change to column layout */
+        justify-content: center; /* Center the content vertically */
+        align-items: center; /* Center the content horizontally */
+    }
+
+    .contact-heading {
+        font-size: 2rem; /* Further reduce font size */
+        padding-top: 150px; /* Adjust padding */
+    }
+
+    .buttons-to {
+        margin-top: 20px; /* Adjust margin for smaller screens */
+        margin-bottom: 40px;
+    }
+
+    .contact-button {
+        width: 160px; /* Smaller button width */
+        font-size: 1rem; /* Smaller font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Change to column layout */
+        justify-content: center; /* Center the content vertically */
+        align-items: center; /* Center the content horizontally */
+    }
+
+    .contact-heading {
+        font-size: 1.5rem; /* Further reduce font size */
+        padding-top: 50px; /* Adjust padding for better visibility */
+        margin: 0; /* Remove any margin that could push it away */
+    }
+
+    .buttons-to {
+        margin-top: 20px; /* Adjust margin for smaller screens */
+        margin-bottom: 40px;
+    }
+
+    .contact-button {
+        width: 140px; /* Smaller button width */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-heading {
+        font-size: 1.2rem; /* Smaller font size */
+        padding-top: 20px; /* Further adjust padding */
+        margin: 0; /* Remove margin */
+    }
+
+    .buttons-to {
+        margin-top: 20px; /* Adjust margin for smaller screens */
+        margin-bottom: 40px;
+    }
+
+    .contact-button {
+        width: 120px; /* Smaller button width */
+        font-size: 0.8rem; /* Smaller font size */
+    }
+}

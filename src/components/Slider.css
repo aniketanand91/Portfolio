@@ -1,0 +1,44 @@
+
+.slider-container {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent overflow of images */
+}
+
+
+.slide-image {
+  width: 100%; /* Make sure the image takes the full width of the container */
+  height: 100%; /* Ensure the image covers the container height */
+  /* max-width: 100%; Prevent the image from exceeding its container width */
+  /* max-height: 100%; Prevent the image from exceeding its container height */
+  object-fit: cover; /* Ensures the image covers the entire slide without stretching */
+}
+
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px; /* Adjust to move dots closer to the bottom */
+  margin-bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%); /* Center the pagination dots */
+  z-index: 10; /* Make sure pagination dots are above the image */
+}
+
+.swiper-pagination-bullet {
+  background-color: white; /* Set the dots to white */
+  opacity: 0.8; /* Slightly transparent for inactive dots */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white; /* Set arrow color */
+  z-index: 10;  /* Make sure arrows are above the image */
+}
+
+.swiper-button-prev {
+  left: 25px; /* Position the previous arrow slightly to the left */
+}
+
+.swiper-button-next {
+  right: 25px; /* Position the next arrow slightly to the right */
+}

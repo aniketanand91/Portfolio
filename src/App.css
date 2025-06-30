@@ -1,0 +1,13 @@
+
+/* Main container setup */
+.App {
+  display: flex; /* Flexbox for overall layout */
+  flex-direction: column; /* Stack children vertically */
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+

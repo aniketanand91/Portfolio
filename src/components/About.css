@@ -1,0 +1,219 @@
+.about-container {
+    background-color: white; /* Creamy white background */
+    padding: 20px; /* Add some padding */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange children vertically */
+    align-items: center; /* Center align items */
+    justify-content: space-between; /* Center content vertically */
+}
+
+.astronaut-logo {
+    padding-top: 138px;
+    flex: 1;
+    text-align: center;
+}
+
+.astronaut-logo img {
+    width: 300px;
+    padding-bottom: 40px;
+}
+
+.astronaut-logo a {
+    font-size: 1.2rem; /* Slightly larger font size */
+    font-weight: bold; /* Bold text for emphasis */
+    color: #0077b5; /* LinkedIn brand color */
+    text-decoration: none; /* Remove underline */
+    position: relative; /* For positioning pseudo-elements */
+    padding: 10px 20px; /* Add padding for clickable area */
+    border-radius: 25px; /* Rounded corners for the button effect */
+    background-color: rgba(0, 119, 181, 0.1); /* Light background color */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+
+.astronaut-logo a::before {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute; /* Position it relative to the link */
+    left: 0; /* Start from the left */
+    bottom: 0; /* Align at the bottom */
+    width: 100%; /* Full width */
+    height: 2px; /* Height of the underline */
+    background: linear-gradient(90deg, #0077b5, #005582); /* Gradient for underline */
+    transform: scaleX(0); /* Initially hide the underline */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.astronaut-logo a:hover {
+    color: #005582; /* Darker LinkedIn color on hover */
+    background-color: rgba(0, 119, 181, 0.2); /* Darken background on hover */
+}
+
+
+.about-me {
+    flex: 1;
+    padding-top: 220px;
+    padding-left: 20px;
+    align-items: center;
+}
+
+
+.about-me p {
+    font-size: 24px !important;
+    line-height: 1.8; /* Keep line height for readability */
+    color: #555; /* Medium gray color for the paragraph text */
+    margin-bottom: 25px; /* Space below the paragraph */
+    text-align: justify; /* Justify text for a clean look */
+    max-width: 800px; /* Limit width for better readability */
+    margin-left: auto; /* Center align the section */
+    margin-right: auto; /* Center align the section */
+    padding: 0 20px; /* Add padding for smaller screens */
+}
+
+.about-me h2{
+    text-align: left;
+    padding-left: 18px;
+    padding-bottom: 8px;
+    /* font-size: 2rem; Size for the main heading */
+    font-weight: bold; /* Bold font for emphasis */
+    color: #333; /* Dark gray color */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.about-me li{
+    font-size: 1.1rem; /* Base font size for the description */
+    line-height: 0.5; /* Increased line height for readability */
+    color: #555; /* Medium gray color for the paragraph text */
+    margin-bottom: 25px; /* Space below the paragraph */
+    text-align: justify; /* Justify text for a clean look */
+    max-width: 800px; /* Limit width for better readability */
+    margin-left: auto; /* Center align the section */
+    margin-right: auto; /* Center align the section */
+    padding: 0 20px; /* Add padding for smaller screens */
+}
+
+
+
+
+/* -------------  Media Queries ------------------ */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 10px; /* Reduce padding on mobile */
+    }
+
+    .astronaut-logo {
+        padding-top: 50px; /* Reduce padding for smaller screens */
+    }
+
+    .astronaut-logo img {
+        width: 200px; /* Reduce image size for mobile */
+    }
+
+    .about-me {
+        padding-top: 50px; /* Reduce top padding */
+        padding-left: 0; /* Remove left padding */
+    }
+
+    .about-me p {
+        font-size: 20px; /* Smaller font size for mobile */
+        padding: 0 10px; /* Adjust padding */
+    }
+
+    .about-me h2 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .about-me li {
+        font-size: 1rem; /* Adjust list item size */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about-container {
+        flex-direction: row; /* Keep elements in a row for tablets */
+    }
+
+    .astronaut-logo {
+        padding-top: 100px; /* Adjust padding for tablets */
+    }
+
+    .astronaut-logo img {
+        width: 250px; /* Adjust image size for tablets */
+    }
+
+    .about-me {
+        padding-top: 100px; /* Adjust top padding */
+    }
+
+    .about-me p {
+        font-size: 22px; /* Adjust paragraph font size */
+    }
+
+    .about-me h2 {
+        font-size: 1.8rem; /* Adjust heading size */
+    }
+
+    .about-me li {
+        font-size: 1.1rem; /* Adjust list item size */
+    }
+}
+
+/* Large Screen Styles */
+@media (min-width: 1025px) {
+    .about-container {
+        flex-direction: row; /* Maintain row layout */
+    }
+
+    .astronaut-logo {
+        padding-top: 138px; /* Default padding for larger screens */
+    }
+
+    .astronaut-logo img {
+        width: 300px; /* Default image size */
+    }
+
+    .about-me {
+        padding-top: 220px; /* Default top padding */
+    }
+
+    .about-me p {
+        font-size: 24px; /* Default paragraph font size */
+    }
+
+    .about-me h2 {
+        font-size: 2rem; /* Default heading size */
+    }
+
+    .about-me li {
+        font-size: 1.1rem; /* Default list item size */
+    }
+}
+
+
+
+
+@media (max-width: 576px) {
+  .about-me p,
+  .about-me li {
+    padding: 0 10px;
+    font-size: 0.95rem;
+  }
+
+  .about-me h2 {
+    padding-left: 10px;
+    font-size: 1.2rem;
+  }
+
+  .astronaut-logo img {
+    width: 150px;
+  }
+
+  .about-container {
+    padding: 10px;
+  }
+}

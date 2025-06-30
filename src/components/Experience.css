@@ -1,0 +1,235 @@
+.experience-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: url('../images/space1.jpg'); /* Replace with your GIF file */
+    background-size: cover; /* Ensure the GIF covers the entire container */
+    background-position: center; /* Center the GIF */
+    overflow: hidden; /* Prevent content overflow */
+    
+}
+
+
+.experience-container2 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: url('../images/space2.jpg'); /* Replace with your GIF file */
+    background-size: cover; /* Ensure the GIF covers the entire container */
+    background-position: center; /* Center the GIF */
+    overflow: hidden; /* Prevent content overflow */
+    
+}
+
+.experience-heading {
+    text-align: center;
+    color: white;
+    padding-top: 90px;
+    font-size: x-large;
+    margin-bottom: 50px;
+}
+
+.experience-div {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+}
+
+
+.experience-logo {
+    margin: 50px;
+    padding-top: 90px;
+    flex: 1;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+    /* border: 2px solid red; */
+}
+
+.experience-logo img {
+    /* border: 2px solid red; */
+    width: 70%;
+}
+
+.experience-content {
+    flex: 1;
+    /* border: 2px solid red; */
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 50%;
+    margin-right: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.experience-content li {
+    line-height: 1.5rem;
+}
+
+.experience-content ul p{
+    font-weight: bold;
+    color: white;
+}
+
+
+/* --------------- Experience2 --------------- */
+
+.experience-heading2 {
+    text-align: right;
+    color: white;
+    padding-top: 65px;
+    margin-right: 535px;
+    font-size: x-large;
+    margin-bottom: 40px;
+}
+
+.experience-div2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    /* border: 2px solid red; */
+}
+
+.experience-logo2 {
+    margin: 50px;
+    padding-top: 90px;
+    flex: 1;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+    /* border: 2px solid red; */
+}
+
+.experience-logo2 img {
+    width: 70%;
+}
+
+.experience-content2 {
+    flex: 1;
+    /* border: 2px solid red; */
+    /* margin-top: 120px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 30px;
+    width: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.experience-content2 ul p{
+    font-weight: bold;
+    color: white;
+}
+
+.experience-content2 li {
+    margin-bottom: 3px;
+    line-height: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* For tablets and small screens (max-width: 992px) */
+@media (max-width: 992px) {
+    .experience-heading,
+    .experience-heading2 {
+        font-size: 1.5rem; /* Reduce heading size */
+        padding-top: 60px; /* Adjust top padding */
+        margin-bottom: 30px; /* Adjust bottom margin */
+    }
+
+    .experience-div,
+    .experience-div2 {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .experience-logo,
+    .experience-logo2 {
+        margin: 20px; /* Reduce margin */
+        padding-top: 60px; /* Adjust padding */
+        text-align: center; /* Center text */
+    }
+
+    .experience-logo img {
+        width: 80%; /* Adjust logo size */
+    }
+
+    .experience-content,
+    .experience-content2 {
+        width: 90%; /* Full width for content */
+        padding: 10px; /* Reduce padding */
+        margin-right: 0; /* Reset margin */
+    }
+}
+
+/* For mobile screens (max-width: 576px) */
+@media (max-width: 576px) {
+    .experience-heading,
+    .experience-heading2 {
+        font-size: 1.2rem; /* Further reduce heading size */
+        padding-top: 40px; /* Adjust top padding */
+        margin-bottom: 20px; /* Adjust bottom margin */
+    }
+
+
+
+    .experience-logo,
+    .experience-logo2 {
+        margin: 10px; /* Further reduce margin */
+        padding-top: 40px; /* Adjust padding */
+        margin-top: -100px;
+    }
+
+    .experience-logo img {
+        width: 70%; /* Adjust logo size */
+    }
+
+    .experience-content,
+    .experience-content2 {
+        width: 95%; /* Nearly full width for content */
+        padding: 5px; /* Further reduce padding */
+        margin-right: 0; /* Reset margin */
+        margin-top: -30px;
+    }
+
+    .experience-content li {
+        font-size: 0.9rem; /* Adjust font size for list items */
+    }
+}
+
+
+
+
+@media (max-width: 576px) {
+  .experience-heading2 {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .experience-div2 {
+    margin-top: 20px;
+  }
+
+  .experience-content2 {
+    margin-top: 10px;
+  }
+
+  .experience-logo2 img {
+    width: 80%;
+  }
+
+  .experience-container,
+  .experience-container2 {
+    height: auto; /* Remove fixed height for mobile */
+    padding-bottom: 40px;
+  }
+}
